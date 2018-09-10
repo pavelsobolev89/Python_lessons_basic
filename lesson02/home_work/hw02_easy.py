@@ -43,7 +43,7 @@ print(first_list)
 
 list_numbers = [2, 12, 13, 33, 8, 9, 10, 100, 89, 4]
 
-new_list = []
+new_list = [] 
 
 for l in list_numbers:
 
