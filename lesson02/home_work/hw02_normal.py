@@ -38,7 +38,7 @@ print (sqrt_numbers())
 # Подсказка:
 # для получения случайного числа используйте функцию randint() модуля random
 
-import random
+import random 
 
 list_complete=[]
 list_range = list(range(-100,100))
