@@ -13,13 +13,51 @@
 
 # Подсказка: воспользоваться методом .format()
 
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+for c, f in enumerate(fruits,1):
+    print("{}. {}".format(c, f.rjust(7)))
+
+# fruits = ["яблоко", "банан", "киви", "арбуз"]
+# for f in fruits:
+#     x = f
 
 # Задача-2:
 # Даны два произвольные списка.
 # Удалите из первого списка элементы, присутствующие во втором списке.
+
+first_list = [1, 'asd', 4, 'irk', (1,2,3)]
+second_list = [4, 'eff', 1, 'kgm']
+
+for s in second_list:
+    if s in first_list:
+        first_list.remove(s)
+
+print(first_list)
+
 
 
 # Задача-3:
 # Дан произвольный список из целых чисел.
 # Получите НОВЫЙ список из элементов исходного, выполнив следующие условия:
 # если элемент кратен двум, то разделить его на 4, если не кратен, то умножить на два.
+
+list_numbers = [2, 12, 13, 33, 8, 9, 10, 100, 89, 4]
+
+new_list = []
+
+for l in list_numbers:
+
+    if l % 2.0 == 0:
+        # print(['{}'.format(l*4)])
+        divide_numbers = l/4
+        new_list.append(divide_numbers)
+
+
+    elif not l % 2 == 0:
+        multiply_numbers = l*2
+        new_list.append(multiply_numbers)
+
+print(new_list)
+
+
+
